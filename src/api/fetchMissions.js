@@ -8,6 +8,7 @@ export const fetchMissions = () => {
       return res;
     })
     .catch(err => {
+      // We could add proper error handling here as part of this helper function
       console.error("error fetching data from api, err: ", err.message);
       return err;
     });
